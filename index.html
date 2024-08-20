@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Marco Polo</h1>
+    <h2>Instruções:
+        <br>
+        1-Será sorteado um número aleatório entre 0 e 50.
+        <br>
+        2-Você terá 3 tentativas para acertar o número
+        <br>
+        3-A palavra "Quente" significa que o número está acima do qual você tentou adivinhar e "Frio" quer dizer que o número está abaixo do qual você tentou adivinhar
+    </h2>
+    <br>
+    <div id = "dica" ></div>
+    <input id = "userChoice" placeholder="Adivinhe um número" type="number">
+    <br>
+    <button onclick="jogar()">Adivinhar</button>
+    <button onclick="reiniciar()">reiniciar</button>
+    <div id="chances"></div>
+    <div id="resposta"></div>
+</body>
+</html>
