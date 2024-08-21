@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Jokempo</title>
+
+</head>
+<body>
+    <h1>Jokempo</h1>
+    <h2>Instruções:
+        <br>
+        -Escolha um número de 1 a 3
+        <br>
+        -Melhor de 3
+        <br>
+        -1-Pedra 2-Papel 3-Tesoura
+    </h2>
+
+    <input type="number" id="user" placeholder="Insira o valor">
+    <br>
+    <button  onclick="jogar()">Jogar</button>
+    <button  onclick="reiniciar()">Reiniciar</button>
+    <div id="escolhaBot"></div>
+    <span id="resposta"></span>
+    <div id="pontosUser">Pontos do Usuário:</div>
+    <div id="pontosBot">Pontos do Bot:</div>
+    <br>
+    <div id="partidasUser">Partidas Usuário: </div>
+    <div id="partidasBot">Partidas Bot: </div>
+</body>
+
+</html>

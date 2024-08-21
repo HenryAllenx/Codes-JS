@@ -1,0 +1,58 @@
+h1{
+    text-align: center;
+    border: 20px;
+    color: darkslategray;
+    
+}
+
+h2{
+    text-align: left;
+    border: solid;
+    border-radius: 5px;
+}
+
+input{
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 150px;
+    text-align: center;
+    border-color: azure;
+}
+
+#partidasUser, #partidasBot{
+    margin-right: 350px;
+    margin-top: 20px;
+    color: grey;
+    
+}
+
+#pontosUser, #pontosBot{
+    margin-right: 350px;
+    margin-bottom: 20px ;
+    color: gray;
+    
+
+}
+
+button{
+    border-radius:50px ;
+    border-color: aliceblue;
+    margin: 30px;
+    cursor: pointer;
+}
+
+#escolhaBot{
+    color: dimgray;
+}
+
+#resposta{
+    color: red;
+}
+body{
+    
+    text-align: center;
+
+  
+    
+}
+
