@@ -18,9 +18,9 @@ function findOutNumber(){
     }
 
     if (div == 2) {
-        resposta.innerHTML= `O número: ${number} é primo`
+        resposta.innerHTML= `O número: ${number} é primo`;
         
     }else{
-        resposta.innerHTML =`O número: ${number} não é primo`
+        resposta.innerHTML =`O número: ${number} não é primo`;
     }
 }
