@@ -1,26 +1,25 @@
-let number;
-let resposta;
-let div;
-
-
 function findOutNumber(){
-    number = document.getElementById("user").value;
-    resposta = document.getElementById("resposta");
-    div= 0;
+    const number = parseInt(document.getElementById("user").value); // Converter para número
+    const resposta = document.getElementById("resposta");
 
-    for (let i = 1; i <= number; i++) {
-        if (number % i == 0) {
-            div++;
-        }
-
-        
-        
+    // Validação do número
+    if (isNaN(number) || number < 2) {
+        resposta.innerHTML = "Por favor, insira um número válido maior que 1.";
+        return;
     }
 
-    if (div == 2) {
-        resposta.innerHTML= `O número: ${number} é primo`;
-        
-    }else{
-        resposta.innerHTML =`O número: ${number} não é primo`;
+    // Verificação de número primo
+    let isPrime = true;
+    for (let i = 2; i <= Math.sqrt(number); i++) { // Verificar até a raiz quadrada
+        if (number % i === 0) {
+            isPrime = false;
+            break;
+        }
+    }
+
+    if (isPrime) {
+        resposta.innerHTML = `O número: ${number} é primo.`;
+    } else {
+        resposta.innerHTML = `O número: ${number} não é primo.`;
     }
 }
